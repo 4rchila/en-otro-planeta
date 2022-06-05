@@ -1,0 +1,11 @@
+{
+  "name": "programacion",
+  "version": "1.0.0",
+  "description": "proyectos basico de programacion",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dsrc/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerlo 1k4r1 gerlo1kar1@gmail",
+  "license": "ISC"
+}
