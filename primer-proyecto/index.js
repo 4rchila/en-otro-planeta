@@ -1,8 +1,15 @@
 let tierra = 9.8;
 let marte = 3.7;
 let jupiter = 24.8;
+let saturno = 10.44;
+let venus = 8.87;
+let neptune = 11.15;
+let mercurio = 3.7
+let luna = 1.62;
+
+
 let peso = parseFloat(prompt('cuanto es tu peso en la tierra'));
-let planeta = parseInt(prompt('elige un planeta\n 1 para marte\n 2 para jupiter'));
+let planeta = parseInt(prompt('elige un planeta\n 1. para Marte 2. para Jupiter\n 3. para Saturno 4.Venus\n 5. Mercurio 6.Luna'));
 let nombre;
 
 
@@ -24,10 +31,42 @@ switch(planeta){
 
    break;
 
+   case 3:
+    let result3 = peso * saturno / tierra
+    nombre = 'Saturno'
+    const text3 = document.getElementById("jstyle")
+    text3.innerText = 'tu peso en '+ nombre +' es de ' + result3.toFixed(2) + ' kilos'
+
+    break;
+
+    case 4:
+      let result4 = peso *venus / tierra
+   nombre = 'Venus'
+   const text4 = document.getElementById("jstyle")
+   text4.innerText = 'tu peso en '+ nombre +' es de ' + result4.toFixed(2) + ' kilos'
+
+   break;
+
+   case 5:
+    let result5 = peso * mercurio / tierra
+    nombre = 'Mercurio'
+    const text5 = document.getElementById("jstyle")
+    text5.innerText = 'tu peso en '+ nombre +' es de ' + result5.toFixed(2) + ' kilos'
+
+    break;
+
+    case 6:
+      let result6 = peso * luna / tierra
+   nombre = 'Luna'
+   const text6 = document.getElementById("jstyle")
+   text6.innerText = 'tu peso en '+ nombre +' es de ' + result6.toFixed(2) + ' kilos'
+
+   break;
+
    default:
       nombre = 'crypton'
-      const text3 = document.getElementById("jstyle")
-      text3.innerText = 'tu peso en '+ nombre +' es de ' + 100000000000000000 + ' kilos'
+      const text9 = document.getElementById("jstyle")
+      text9.innerText = 'tu peso en '+ nombre +' es de ' + 100000000000000000 + ' kilos'
       break;
 }
 }
